@@ -1,0 +1,183 @@
+*{
+
+margin: 0px;
+padding: 0px;
+
+
+
+}
+
+body{
+
+background-image: url('images/bheart.jpg');
+background-size: 100%;
+background-repeat:repeat;
+
+
+
+
+}
+
+/*Parte de Cima da Página*/
+
+.toptext{
+	
+	background: #59000a;
+	font-family: verdana;
+	color: white;
+	font-weight: 900;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+
+}
+
+
+.heart{
+background: #59000a;
+margin-left: 20px;
+width: 30px;
+animation: go-back 0.5s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+
+}
+
+
+
+.navbarcenter{
+justify-content: center;
+display: flex;
+}
+
+.navtext{
+	
+	font-family: Arial;
+	text-decoration: none;
+	color: white;
+	display: flex;
+	justify-content: center;
+	width: 130px;
+	padding: 10px;
+	border-radius: 30px;
+	background: red;
+	margin: 30px;
+	transition: 0.2s ease-in-out 0s;
+
+}
+
+.navtext:hover{
+
+	background: #400f03;
+	transform: scale(1.2);
+
+}
+
+/*Fim parte de cima da página*/
+
+/*Conteúdo da página*/
+.content{
+	
+	display: flex;
+	margin: 60px;
+	justify-content: center;
+	padding: 50px;
+	align-items: center;
+
+
+	
+}
+
+.textpinicial{
+	
+	font-size: 50px;
+	padding: 30px;
+	font-weight: 900;
+	color: white;
+	font-family: Bradley Hand, cursive;
+	text-shadow: 1px 1px 2px red, 0 0 1em red, 0 0 0.2em red;
+	animation: lado 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+
+}
+
+.bhearts{
+
+		
+		filter: drop-shadow(3px 3px);
+		animation: go-back 3s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+
+
+}
+
+.video{
+
+	justify-content: center;
+	display: flex;
+	padding: 20px;
+	
+}
+
+/*Fim do conteúdo da página*/
+
+/*Rodapé da página*/
+
+.rodape{
+	
+	background: #59000a;
+	font-family: verdana;
+	color: white;
+	font-weight: 900;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+
+}
+
+/*Fim do rodapé da página*/
+
+/*Animações*/
+@keyframes go-back{
+
+	0%{
+
+		transform: scale(1.0);
+
+	}
+
+	100%{
+
+		transform: scale(1.2);
+
+	}
+}
+@keyframes lado{
+
+	0%{
+
+		transform: translateX(10px);
+	}
+
+	100%{
+
+		transform: translateX(50px);
+
+	}
+
+}
+
+html ::-webkit-scrollbar {
+  width: 8px;
+}
+
+html ::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: red;
+}
+
+html ::-webkit-scrollbar-track {
+  background: #664102;
+}
