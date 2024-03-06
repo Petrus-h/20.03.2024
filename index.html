@@ -7,9 +7,26 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+
+
+	$(document).on('click', 'a', function(event){
+
+
+		event.preventDefault();
+
+
+		$('html, body').animate({
+			scrollTop: $( $.attr(this, 'href') ).offset().top
+		}, 1000);
+
+	});
+
+</script>
 <body>
 
-	<header> 
+	<header id="sectionhome"> 
 
 		<span class="toptext">Parabéns para nós minha gatinha, 1 ano de muuuitos! <img class="heart" width="30px" src="images/coracao.png"></span>
 		
@@ -17,9 +34,26 @@
 	</header>
 
 	
-	
 	<hr>
+	<div class="menu">
+		<button class="open-menu" type="button">
+			Menu
+		</button>
+		<div class="menu-trigger"></div>
+		<ul class="nav-menu">
+			<li class="nav-menu-item"><a class="sbmenu" href="#sectionhome">Inicio</a> </li>
+			<li class="nav-menu-item"><a class="sbmenu" href="#sectionmessage">Mensagem</a> </li>
+			<li class="nav-menu-item"><a class="sbmenu" href="#sectionhistoria">História</a> </li>
+			<li class="nav-menu-item"><a class="sbmenu" href="#cap1">Capitulo 1</a> </li>
+			<li class="nav-menu-item"><a class="sbmenu" href="#cap2">Capitulo 2</a> </li>
+			<li class="nav-menu-item"><a class="sbmenu" href="#cap3">Capitulo 3</a> </li>
+			<li class="nav-menu-item"><a class="sbmenu" href="#cap4">Capitulo 4</a> </li>
+			<li class="nav-menu-item"><a class="sbmenu" href="#cap5">Capitulo 5</a> </li>
+			<li class="nav-menu-item"><a class="menublock" href="#historiadark">História Dark</a> </li>
 
+		</ul>
+	</div>
+	
 
 	<div class="contentinicio">
 		<img class="bhearts" width="300" src="images/coracoes.png">	
@@ -27,9 +61,12 @@
 	</div>
 
 
-	<a class="navtext1" href="#">Começo</a>
+	<!--<a class="navtext1" href="#sectionhome">Começo</a>
 	<a class="navtext2" href="#sectionmessage">Mensagem 20.03</a> 		
-	<a class="navtext3" href="#sectionhistoria">História</a>
+	<a class="navtext3" href="#sectionhistoria">História</a>-->
+
+
+
 
 	<div class="video">
 
@@ -54,48 +91,68 @@
 
 		
 		<div class="contenthistoria">
+			<img class="imgp" src="images/1.jpeg">
+			<span id="cap1" class="tp">Capítulo 1: O Encontro na Botlane</span>
+			<p class="ep">Era uma tarde ensolarada quando Petrus e Atalia se encontraram pela primeira vez no mundo virtual do League of Legends. Ambos eram jogadores apaixonados, e por um acaso do destino, foram colocados no mesmo time, na botlane, durante uma partida ranqueada. Petrus, um jovem de 19 anos com um talento excepcional para ADC (Attack Damage Carry), e Atalia, uma garota de 18 anos que brilhava como suporte.
+			</p>
+			<p class="ep">A partida começou de forma promissora, mas conforme o jogo avançava, diferenças de estratégia surgiram entre Petrus e Atalia. Petrus queria ser mais agressivo, enquanto Atalia preferia jogar de forma mais defensiva. As tensões aumentaram e logo eles estavam discutindo no chat do jogo, cada um defendendo sua abordagem.
+			</p>
+			
+			<img class="imgp" src="images/2.jpeg">
+			<p class="ep">Atalia se sentiu mal depois da partida. Ela não costumava brigar com desconhecidos nos jogos, e a situação a deixou abalada. Ela sabia que poderia ter lidado melhor com a situação, então decidiu fazer algo para consertar as coisas. Ela procurou o nome de Petrus na lista de amigos e o convidou para uma nova partida.
+			</p>
+			<img class="imgp" src="images/3.jpeg">
+			<p class="ep">O dia passou e Petrus não respondeu ao convite de Atalia. Ela ficou um pouco desanimada, pensando que ele talvez estivesse chateado demais para querer jogar novamente. No entanto, no dia seguinte, uma notificação apareceu em seu celular. Era uma mensagem de Petrus, pedindo desculpas pela briga e convidando-a para jogar juntos novamente.
 
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet sapien vel tellus imperdiet rhoncus. Morbi venenatis vulputate leo, eu sodales libero facilisis eget. Ut gravida at arcu consequat commodo. Mauris nisi nunc, iaculis et sodales vitae, sodales a leo. Sed posuere sapien ac ultricies tempor. Etiam nulla ex, fringilla sit amet malesuada nec, maximus vel urna. Fusce nibh nibh, imperdiet in eros imperdiet, pellentesque dictum sapien. Integer finibus nibh vel egestas venenatis. Nullam tristique sagittis diam. Aliquam lacus purus, sodales id elit id, tempor ornare ipsum.
+			</p>
+			<img class="imgp" src="images/4.jpeg">
+			<p id="cap2" class="tp">Capítulo 2: Troca de Mensagens e Conexão Virtual</p>
+			<p class="ep">A partir daquele momento, Petrus e Atalia começaram a jogar juntos com mais frequência. Eles descobriram que tinham uma ótima sinergia como dupla na botlane, e as discussões no chat deram lugar a risadas e estratégias bem-sucedidas. Durante duas semanas, eles passaram horas jogando e conversando, conhecendo melhor um ao outro através de suas conversas no jogo.
+			</p>
+			<img class="imgp" src="images/5.jpeg">
+			<p class="ep">À medida que o tempo passava, Petrus e Atalia começaram a trocar números de telefone. Eles continuaram a se falar mesmo quando não estavam jogando, compartilhando detalhes de suas vidas, interesses e sonhos. Petrus contava sobre sua paixão por programação e seus planos de estudar engenharia de software. Enquanto isso, Atalia falava sobre sua jornada como escritora iniciante e sua paixão por arte.
+			</p>		
+			<p class="ep">Um dia, durante uma conversa por mensagem, Petrus decidiu dar o próximo passo. Ele confessou seus sentimentos por Atalia, dizendo que gostaria de ser mais do que apenas parceiros de jogo. Atalia ficou surpresa, mas também feliz. Ela também tinha desenvolvido sentimentos por ele ao longo das semanas, então aceitou com um sorriso.
+			</p>
+			<img class="imgp" src="images/6.jpeg">
+			<p class="ep">Assim, depois de duas semanas desde que se conheceram no jogo, eles decidiram oficializar o namoro. Era algo novo para os dois, mas a conexão que sentiam era forte o suficiente para superar qualquer obstáculo. Petrus e Atalia começaram a se chamar de "meu amor" nas mensagens, trocavam fotos e planos para o futuro.</p>
+			<img class="imgp" src="images/7.jpeg">
+			
+			<p id="cap3" class="tp">Capítulo 3: Um Ano de Amor à Distância</p>
+			
+			<p class="ep">O tempo voou para Petrus e Atalia enquanto eles continuavam seu namoro virtual. Eles aprenderam a se apoiar e confiar um no outro, mesmo estando separados por distância física. Trocavam mensagens diárias, áudios de boa noite e se ligavam em chamadas de vídeo para matar um pouco da saudade.
+			</p>		
+			<img class="imgp" src="images/8.jpeg">
+			<p class="ep">Durante esse ano, eles também compartilharam seus planos para o futuro. Conversaram sobre como seria incrível se encontrarem pessoalmente, conhecerem as famílias um do outro e quem sabe, um dia, construírem uma vida juntos. Os desafios da distância só serviram para fortalecer o amor que sentiam um pelo outro.
+			</p>
+			<img class="imgp" src="images/9.jpeg">
+			<p class="ep">Eles também tiveram seus momentos difíceis. Houve dias em que a saudade parecia insuportável e a distância parecia interminável. Mas sempre encontravam forças um no outro para seguir em frente. Os jogos online continuaram sendo parte importante de suas vidas, uma forma de se conectarem quando não podiam estar juntos pessoalmente.
+			</p>
 
-			Aliquam ac efficitur ante. Duis vitae ipsum mauris. Donec condimentum turpis id mauris placerat eleifend. Nam sem est, pharetra et elit ac, porta bibendum augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce ut tellus in augue auctor maximus. Etiam vitae ipsum mollis, mattis lorem in, consectetur urna. Integer quis urna ut diam ullamcorper iaculis. Vestibulum semper, purus quis dictum feugiat, risus nibh lobortis turpis, et condimentum velit dolor in nisi. Proin sit amet purus ipsum.
+			<p id="cap4" class="tp">Capítulo 4: O Encontro Real</p>
+			<p class="ep">Finalmente, chegou o tão esperado junho de 2024. Petrus e Atalia marcaram a data para se encontrarem pessoalmente pela primeira vez. Os corações de ambos batiam acelerados de ansiedade e emoção. E então, finalmente, ela viu Petrus se aproximando, com um sorriso largo no rosto. Era ele, seu namorado virtual, agora ali, tão real e palpável.
+			</p>
+			<img class="imgp" src="images/10.jpg">
+			<p class="ep">Os abraços que se seguiram foram cheios de carinho e emoção. Petrus e Atalia sentiram como se estivessem sonhando acordados. Eles passaram os primeiros dias juntos explorando a cidade, visitando pontos turísticos e simplesmente desfrutando da companhia um do outro.
+			</p>
 
-			Vestibulum fermentum odio nulla, nec mattis nisi ullamcorper ut. Praesent tincidunt sodales gravida. Maecenas mauris orci, egestas in egestas eu, vestibulum nec dui. Phasellus diam nisi, pellentesque quis elit vel, hendrerit aliquet mauris. Phasellus id odio sit amet augue lacinia facilisis a eget tortor. Nulla ac turpis aliquam, interdum orci in, aliquet lacus. Proin ultrices urna quam, non dapibus lectus pharetra vel. Nam vel lobortis metus, sit amet elementum diam. Nunc tincidunt lorem vel eleifend consequat. Morbi gravida finibus ante, eget euismod magna lacinia varius. Phasellus eget justo eu ligula hendrerit vehicula. Donec varius vel ex eu vestibulum. Maecenas mollis quis eros vitae euismod. Phasellus lacinia urna nulla, in blandit est suscipit ut. In hac habitasse platea dictumst.
-
-			Nullam ornare augue ut facilisis finibus. Phasellus sit amet sem in metus varius placerat sit amet vitae urna. Vivamus non viverra neque, sed efficitur nisl. Mauris ut nunc ipsum. Donec sit amet hendrerit leo. Maecenas tristique tincidunt orci. Nunc a laoreet urna. Curabitur venenatis orci sit amet elit porta, dignissim interdum tellus mollis. Aenean consequat lacus vitae feugiat consectetur. Pellentesque id sodales quam, ac pellentesque est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut pulvinar ipsum est, a fermentum tortor gravida ac. Quisque mollis congue blandit.
-
-			Etiam ut turpis at mi porta elementum. Donec ultrices risus sed leo sollicitudin lobortis. Nulla facilisi. Phasellus interdum vestibulum viverra. Curabitur faucibus mauris mauris, a maximus nisl vulputate a. In dolor orci, egestas a risus et, varius accumsan arcu. Quisque tristique eleifend felis nec venenatis.
-
-			Integer in lacus vitae nunc molestie facilisis nec vel ipsum. Praesent pretium libero vel consequat laoreet. Curabitur ac convallis mi. Vestibulum at est interdum, cursus ex nec, sollicitudin mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras euismod dolor eu diam ultricies finibus. Integer tempus, turpis sit amet dignissim posuere, dui diam finibus risus, vitae venenatis turpis nisi at turpis. Ut aliquam odio nec aliquet sollicitudin. Vestibulum gravida fermentum lacus eu tincidunt. Nullam in justo lacus.
-
-			Pellentesque eu volutpat mi. Proin sodales risus nec augue varius mattis. Etiam egestas augue sit amet mi pretium, at finibus nulla viverra. Vivamus et ante vitae ante lobortis lobortis id a eros. Mauris pharetra felis sit amet aliquet lacinia. Fusce ac quam volutpat, consectetur elit sit amet, pellentesque ipsum. Donec in nisl suscipit, suscipit est et, fermentum urna. Etiam sodales sem bibendum, accumsan metus a, varius eros. Vestibulum tortor augue, sodales et fermentum non, pellentesque nec lorem. Etiam condimentum velit vel tellus efficitur fringilla. Sed bibendum vestibulum porttitor. Donec molestie tincidunt congue. Nunc dignissim faucibus suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas sagittis libero ac lorem vehicula, eget fringilla nisi consectetur.
-
-			Sed pellentesque posuere egestas. Nunc tempus tellus at neque maximus semper. Nullam tincidunt augue quis lacus lacinia vehicula. Fusce ultrices nunc sed turpis elementum, nec euismod augue posuere. Maecenas fermentum nisl ac massa porttitor, sed tempor nisl bibendum. Nulla facilisi. Vivamus vestibulum, leo ac hendrerit congue, ante massa tincidunt purus, a blandit justo eros gravida tellus.
-
-			In viverra ultricies ipsum, porta tincidunt odio malesuada at. Sed gravida elit eget sem dignissim tristique. Nullam scelerisque est sed rutrum ullamcorper. Maecenas pellentesque imperdiet bibendum. Nam libero risus, facilisis a turpis ac, ullamcorper semper augue. Sed sagittis vitae dolor a rhoncus. Quisque vestibulum feugiat sem vitae consequat. Maecenas risus diam, bibendum a tristique vitae, ornare pulvinar elit. Mauris tempor consectetur purus sit amet sodales. Morbi gravida ultricies leo, in tristique turpis suscipit a. Aliquam lacinia est ultricies erat placerat, vitae tristique tellus tincidunt. Ut risus nisl, sollicitudin nec tortor sit amet, hendrerit faucibus mauris.
-
-			Quisque viverra placerat euismod. Curabitur maximus arcu quis ex facilisis, vel lacinia lacus blandit. Pellentesque at nibh vitae justo mollis bibendum eu et tellus. Nullam condimentum sem id ornare faucibus. Aliquam erat volutpat. Sed a elit ac quam sodales sagittis. Nullam pellentesque sem ac laoreet eleifend.
-
-			Curabitur id sem venenatis, rutrum nisi ut, accumsan arcu. Donec a scelerisque purus. Mauris egestas et dui at efficitur. Maecenas blandit pellentesque leo, vitae eleifend leo accumsan eget. Proin quis nisi eget dolor elementum ullamcorper a ac turpis. Nullam sit amet massa metus. Vestibulum lorem massa, suscipit eu placerat ut, vulputate et libero.
-
-			Praesent cursus metus eu lorem aliquam euismod. In porta id enim a semper. Pellentesque ac congue neque, sit amet molestie lorem. Quisque a augue bibendum, sodales mi id, interdum lacus. Nunc aliquet nulla a ante congue, nec mollis lectus pretium. Integer a sem eu elit pulvinar vehicula a vitae lectus. Sed elementum lectus vel tincidunt elementum.
-
-			Vivamus tempus velit id viverra porttitor. In hac habitasse platea dictumst. Curabitur vel odio at nibh molestie aliquet. Proin sed turpis ac enim hendrerit molestie sit amet at sem. Quisque mollis interdum ligula, a pulvinar dolor dignissim quis. Morbi semper erat quis orci commodo, quis efficitur ante sodales. Duis faucibus felis mi, sit amet tristique arcu ornare non. Fusce id dictum nisi.
-
-			Quisque finibus pellentesque lacus commodo rutrum. Sed nec arcu rutrum, luctus lectus posuere, suscipit leo. Aenean dictum pharetra mi. Aenean lobortis augue at aliquam egestas. Pellentesque id porttitor arcu, eu dictum turpis. Mauris finibus ligula ut lacus faucibus, sagittis interdum eros posuere. Curabitur rhoncus in nisl eget facilisis. Pellentesque suscipit leo sit amet pellentesque feugiat.
-
-			In sit amet lectus augue. Nam egestas odio felis, eget luctus ex porttitor quis. Donec faucibus aliquet enim eu dapibus. Fusce risus est, varius in lacinia sit amet, scelerisque ac eros. Duis tempus ut est vitae placerat. Fusce aliquet turpis justo, at ultricies arcu condimentum vel. Maecenas blandit vel nisi vel molestie. Vestibulum ut suscipit ligula. Integer aliquam nunc a ipsum cursus vulputate. Integer neque sapien, consectetur ut ipsum pretium, dictum egestas tellus. Proin nec mi ac magna volutpat vestibulum vitae a dolor.
-
-			Quisque massa leo, consequat nec fermentum vel, auctor ac felis. Nullam vehicula felis non urna maximus eleifend. Maecenas ultrices nisl lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin molestie tortor a nulla elementum, at dictum lacus viverra. Quisque eget dui eu nibh tincidunt semper. Proin rutrum in lorem ac ornare. Ut ullamcorper in velit nec cursus. In consequat sed urna nec ullamcorper. Phasellus sollicitudin maximus turpis, quis sagittis velit vulputate et. Sed vel libero et est ornare euismod a non metus. Quisque ut odio in purus egestas rhoncus.
-
-			Aliquam erat volutpat. Cras sollicitudin sapien at lorem malesuada pharetra. Pellentesque mollis eros ligula, eleifend dapibus sapien facilisis id. Aliquam commodo hendrerit nisi eget accumsan. Morbi eu efficitur sem. Phasellus quis sem ut lacus convallis faucibus at non felis. Morbi nisi quam, pellentesque eu nibh ac, posuere scelerisque lacus. Donec commodo odio elit, nec rhoncus lorem vulputate et.
-
-			Curabitur id blandit magna. Praesent vel consectetur tortor. Ut at nulla a nisi consectetur aliquet. Donec rutrum elementum est, tincidunt iaculis nulla convallis at. Duis at justo ultrices, sagittis orci sit amet, accumsan quam. Morbi placerat elit ac eros imperdiet facilisis. Sed maximus viverra quam, eget vestibulum mi hendrerit ac.
-
-			Aenean eget metus auctor, ultrices sem vitae, rutrum dui. Proin tempor vehicula bibendum. Vivamus lobortis et nibh quis commodo. Nulla hendrerit, nisi at ultricies volutpat, justo nisl venenatis nibh, suscipit fringilla erat enim eget mi. Nullam facilisis in tellus in tincidunt. Cras enim felis, condimentum eu tincidunt sed, luctus ac sem. Curabitur vel sapien non sapien condimentum viverra vel vel mi. Ut non neque et massa aliquet finibus dapibus nec justo.
-
-			Nulla posuere tortor sed lectus consequat pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam rhoncus lacus a tempor auctor. Vestibulum eleifend gravida aliquet. Cras est eros, laoreet sit amet augue in, aliquet maximus turpis. Morbi condimentum lacus sit amet lorem varius, id viverra quam accumsan. Fusce ut velit ante. Praesent lacus dui, tincidunt a sollicitudin at, tincidunt sed lorem. Vivamus ut nulla at lacus elementum imperdiet. Fusce aliquet, ex sollicitudin vestibulum pharetra, odio erat posuere eros, ut convallis leo metus nec velit. Vestibulum non nunc commodo, fringilla diam pellentesque, auctor leo. Nullam pretium tincidunt tortor, eu pellentesque justo ornare quis. Suspendisse quis mattis lacus. Donec viverra consectetur nisi nec iaculis.
-
+			<p id="cap5" class="tp">Capítulo 5: Planos para o Futuro Juntos</p>
+			<p class="ep">À medida que os dias passavam, Petrus e Atalia perceberam que o amor que compartilhavam era verdadeiro e forte. Eles não queriam mais viver separados pela distância. Decidiram então que era hora de dar o próximo passo em seu relacionamento.
+			</p>
+			<img class="imgp" src="images/11.jpg">
+			<p class="ep">Voltaram para casa e começaram a fazer planos para viverem juntos. Conversaram com suas famílias sobre seu relacionamento e receberam todo o apoio e carinho que precisavam. Os pais de Petrus e Atalia estavam felizes por ver seus filhos tão realizados e apaixonados.
+			</p>
+			<img class="imgp" src="images/12.jpeg">
+			<p class="ep">Petrus decidiu se mudar para a cidade de Atalia, onde começariam uma nova vida juntos. Encontraram um lindo apartamento e começaram a planejar seu futuro. Conversaram sobre casamento, filhos, carreira e tudo mais que sonhavam em alcançar juntos.
+			</p>
+			<img class="imgp" src="images/13.jpg">
+			<p class="ep">E assim, Petrus e Atalia deram início a uma nova fase de suas vidas. Superaram o obstáculo da distância e se tornaram um casal inseparável. Eles sabiam que tinham encontrado o amor de suas vidas, e estavam determinados a construir um futuro brilhante juntos, eles viveram felizes para sempre, enfrentando cada desafio da vida lado a lado.
+			</p>
+			
+			
 		</div>
+
+
 
 
 		<hr>
@@ -103,7 +160,7 @@
 		<div class="rodape" >
 
 
-			Feito com carinho por Petrus Henrique, seu tesão. ©
+			Feito com carinho por Petrus Henrique, seu tesão, seu gatinho, seu homem, seu príncipe, seu marido, seu tudo. Para minha amada Atalia Souza. ©
 
 		</div>
 
