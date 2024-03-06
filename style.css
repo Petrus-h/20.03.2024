@@ -1,7 +1,7 @@
 *{
 
-margin: 0px;
-padding: 0px;
+	margin: 0px;
+	padding: 0px;
 
 
 
@@ -9,9 +9,9 @@ padding: 0px;
 
 body{
 
-background-image: url('images/bheart.jpg');
-background-size: 100%;
-background-repeat:repeat;
+	background-image: url('images/bheart.jpg');
+	background-size: 100%;
+	background-repeat:repeat;
 
 
 
@@ -34,21 +34,24 @@ background-repeat:repeat;
 
 
 .heart{
-background: #59000a;
-margin-left: 20px;
-width: 30px;
-animation: go-back 0.5s;
-animation-iteration-count: infinite;
-animation-direction: alternate;
+	background: #59000a;
+	margin-left: 20px;
+	width: 30px;
+	animation: go-back 0.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 
 }
 
 
 
 .navbarcenter{
-justify-content: center;
-display: flex;
+	justify-content: center;
+	display: flex;
+
+
 }
+
 
 .navtext{
 	
@@ -66,7 +69,78 @@ display: flex;
 
 }
 
-.navtext:hover{
+.navtext1{
+	
+	font-family: Arial;
+	text-decoration: none;
+	color: white;
+	display: flex;
+	justify-content: center;
+	width: 130px;
+	padding: 5px;
+	border-radius: 30px;
+	background: red;
+	margin: 10px;
+	transition: 0.2s ease-in-out 0s;
+	position: fixed;
+	bottom: 150px;
+	right: 20px;
+
+}
+.navtext2{
+	
+	font-family: Arial;
+	text-decoration: none;
+	color: white;
+	display: flex;
+	justify-content: center;
+	width: 130px;
+	padding: 5px;
+	border-radius: 30px;
+	background: red;
+	margin: 10px;
+	transition: 0.2s ease-in-out 0s;
+	position: fixed;
+	bottom: 100px;
+	right: 20px;
+
+}
+.navtext3{
+	
+	font-family: Arial;
+	text-decoration: none;
+	color: white;
+	display: flex;
+	justify-content: center;
+	width: 130px;
+	padding: 5px;
+	border-radius: 30px;
+	background: red;
+	margin: 10px;
+	transition: 0.2s ease-in-out 0s;
+	position: fixed;
+	bottom: 50px;
+	right: 20px;
+
+}
+
+
+
+
+
+.navtext1:hover{
+
+	background: #400f03;
+	transform: scale(1.2);
+
+}
+.navtext2:hover{
+
+	background: #400f03;
+	transform: scale(1.2);
+
+}
+.navtext3:hover{
 
 	background: #400f03;
 	transform: scale(1.2);
@@ -76,10 +150,10 @@ display: flex;
 /*Fim parte de cima da página*/
 
 /*Conteúdo da página*/
-.content{
+.contentinicio{
 	
 	display: flex;
-	margin: 60px;
+	margin-bottom: 50px;
 	justify-content: center;
 	padding: 50px;
 	align-items: center;
@@ -104,12 +178,26 @@ display: flex;
 
 .bhearts{
 
-		
-		filter: drop-shadow(3px 3px);
-		animation: go-back 3s;
-		animation-iteration-count: infinite;
-		animation-direction: alternate;
 
+	filter: drop-shadow(3px 3px);
+	animation: go-back 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+
+
+}
+
+.textpinicial2{
+	
+	font-size: 20px;
+	padding: 30px;
+	font-weight: 900;
+	color: white;
+	font-family: Bradley Hand, cursive;
+	text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em red;
+	animation: lado 0.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 
 }
 
@@ -118,8 +206,76 @@ display: flex;
 	justify-content: center;
 	display: flex;
 	padding: 20px;
+
 	
 }
+
+.contentmensagem{
+
+	margin: 200px;
+	justify-content: center;
+	align-items: center;
+	display: inline-block;
+	background-image: url("images/bheart2.jpg");
+	background-size: 100%;
+	border-style: solid;
+	border-color: darkred;
+	border-radius: 20px;
+
+}
+
+.heart2{
+	position: relative;
+	left: 7	00px;
+	margin-left: px;
+	width: 200px;
+	animation: go-back 0.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	filter: drop-shadow(3px 3px);
+
+}
+
+
+.tittle{
+
+	font-size: 15px;
+	padding: 30px;
+	font-weight: 900;
+	color: white;
+	font-family: Bradley Hand, cursive;
+	text-shadow: 1px 1px 2px red, 0 0 1em red, 0 0 0.2em red;
+	
+}
+
+.textpinicial3{
+	
+	font-size: 100px;
+	margin: 100px;
+	font-weight: 900;
+	color: white;
+	font-family: Bradley Hand, cursive;
+	text-shadow: 1px 1px 2px red, 0 0 1em red, 0 0 0.2em red;
+	display: flex;
+	justify-content: center;
+
+}
+
+.contenthistoria{
+
+	margin-bottom: 100px;
+	margin-left: 20px;
+	margin-right: 250px;
+	justify-content: center;
+	align-items: center;
+	display: inline-block;
+	background: white;
+	background-size: 100%;
+	padding: 20px;
+	border-radius: 10px;
+	filter: drop-shadow(3px 3px);
+}
+
 
 /*Fim do conteúdo da página*/
 
@@ -133,7 +289,7 @@ display: flex;
 	font-weight: 900;
 	display: flex;
 	justify-content: center;
-	padding: 20px;
+	padding: 10px;
 
 }
 
@@ -170,14 +326,14 @@ display: flex;
 }
 
 html ::-webkit-scrollbar {
-  width: 8px;
+	width: 8px;
 }
 
 html ::-webkit-scrollbar-thumb {
-  border-radius: 50px;
-  background: red;
+	border-radius: 50px;
+	background: red;
 }
 
 html ::-webkit-scrollbar-track {
-  background: #664102;
+	background: #664102;
 }
